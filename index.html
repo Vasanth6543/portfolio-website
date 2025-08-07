@@ -2,72 +2,57 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Vasanth | Portfolio</title>
-
-  <!-- AOS CSS for animations -->
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-
-  <!-- Custom CSS -->
-  <link rel="stylesheet" href="style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Vasanth's Portfolio</title>
 
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-</head>
-<body>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
 
-  <!-- Header -->
-  <header data-aos="fade-down">
-    <h1>Vasanth</h1>
-    <p>Web Developer | Python Enthusiast</p>
+  <!-- AOS CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css"/>
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body><button id="toggle-theme" class="theme-toggle" data-aos="fade-left">🌞 Toggle Theme</button>
+  <!-- Header Section -->
+  <header><h1 class="glow" data-aos="fade-down">Welcome to My Portfolio</h1>
+    <h1 class="glow typing" data-aos="fade-down" id="typed-text"></h1>
+    <h1 class="glow" data-aos="fade-down">Welcome to My Portfolio</h1>
+    <p data-aos="fade-up" data-aos-delay="200">Web Developer | Python Enthusiast</p>
   </header>
 
-  <!-- About Section -->
-  <section id="about" data-aos="fade-right">
-    <h2>About Me</h2>
-    <img src="assets/images/vasanth.jpg" alt="Vasanth" style="width: 200px; border-radius: 10px; margin-bottom: 1rem;">
-    <p>Hello! I'm Vasanth, a passionate web developer and Python enthusiast. I love creating visually appealing and user-friendly websites using HTML, CSS, and JavaScript. I also enjoy exploring technologies like React, Power BI, and OpenCV.</p>
+  <!-- Projects -->
+  <section class="project" data-aos="zoom-in">
+    <h2>🧠 ML Project</h2>
+    <a href="https://github.com/Vasanth6543/ml-pytorch-project-1" target="_blank">View on GitHub</a>
   </section>
 
-  <!-- Projects Section -->
-  <section id="projects" data-aos="zoom-in">
-    <h2>Projects</h2>
-
-    <div class="project-card" data-aos="fade-up" data-aos-delay="100">
-      <h3>Netflix Data Dashboard</h3>
-      <p>Power BI dashboard that visualizes Netflix data, including content types, release trends, and country-wise insights.</p>
-    </div>
-
-    <div class="project-card" data-aos="fade-up" data-aos-delay="200">
-      <h3>Image to Pencil Sketch</h3>
-      <p>Python + OpenCV project that transforms images into pencil sketches using image processing techniques.</p>
-    </div>
-
-    <div class="project-card" data-aos="fade-up" data-aos-delay="300">
-      <h3>Portfolio Website</h3>
-      <p>This very website, built using HTML, CSS, and animated with AOS. Hosted on GitHub Pages.</p>
-    </div>
+  <section class="project" data-aos="flip-left">
+    <h2>📽️ YouTube Scraper</h2>
+    <a href="https://github.com/Vasanth6543/YOUTUBE-SCRAPER" target="_blank">View on GitHub</a>
   </section>
 
-  <!-- Contact Section -->
-  <section id="contact" data-aos="fade-up">
+  <section class="project" data-aos="fade-up-right">
+    <h2>🖼️ Sketch Project</h2>
+    <a href="https://github.com/Vasanth6543/sketch-project" target="_blank">View on GitHub</a>
+  </section>
+
+  <!-- Contact -->
+  <section class="contact" data-aos="fade-up">
     <h2>Contact Me</h2>
-    <p>Email: <a href="mailto:vasanth@example.com">vasanthoffl14@gmail.com</a></p>
+    <p>Email: <a href="mailto:vasanthoffl14@gmail.com">vasanthoffl14@gmail.com</a></p>
     <p>GitHub: <a href="https://github.com/Vasanth6543" target="_blank">github.com/Vasanth6543</a></p>
     <p>LinkedIn: <a href="https://www.linkedin.com/in/vasanth021" target="_blank">linkedin.com/in/vasanth021</a></p>
-</section>
-    <p><a href="assets/resume/resume.pdf" download>📄 Download Resume</a></p>
   </section>
 
   <!-- Footer -->
   <footer>
-    &copy; 2025 Vasanth Kamaraj. All rights reserved.
+    <p class="glow" data-aos="fade-up">© 2025 Vasanth6543</p>
   </footer>
 
-  <!-- AOS Script -->
+  <!-- AOS and Custom JS -->
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script>
-    AOS.init({ duration: 1000 });
-  </script>
+  <script src="script.js"></script>
 </body>
 </html>
