@@ -8,47 +8,72 @@
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
 
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
   <!-- AOS CSS -->
   <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css"/>
 
   <!-- Custom CSS -->
   <link rel="stylesheet" href="style.css"/>
 </head>
-<<<<<<< HEAD
-<body><button id="toggle-theme" class="theme-toggle" data-aos="fade-left">🌞 Toggle Theme</button>
- 
-=======
 <body>
 
-  <!-- Theme Toggle Button -->
-  <button id="toggle-theme" class="theme-toggle" data-aos="fade-left">🌞 Toggle Theme</button>
-
->>>>>>> 6b6e8cf (Fix: Cleaned up HTML and resolved conflicts)
-  <!-- Header Section -->
+  <!-- Navbar -->
   <header>
-    <h1 class="glow" data-aos="fade-down">Vasanth's Portfolio</h1>
-    <h1 class="glow typing" data-aos="fade-down" id="typed-text"></h1>
-    <p data-aos="fade-up" data-aos-delay="200">Web Developer | Python Enthusiast</p>
+    <nav>
+      <div class="logo">Portfolio.</div>
+      <ul>
+        <li><a href="#" class="active">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
   </header>
 
+  <!-- Hero Section -->
+  <section class="home">
+    <div class="home-content" data-aos="fade-right">
+      <h3>Hello, It's Me</h3>
+      <h1>Vasanth S</h1>
+      <h3>And I'm a <span class="typing"></span></h3>
+      <p>Web Developer | Python Enthusiast</p>
+      <div class="social-media">
+        <a href="https://github.com/Vasanth6543" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/vasanth021" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="mailto:vasanthoffl14@gmail.com"><i class="fas fa-envelope"></i></a>
+      </div>
+      <a href="#" class="btn">Download CV</a>
+    </div>
+
+    <div class="home-img" data-aos="fade-left">
+      <div class="hexagon">
+        <img src="profile.png" alt="Profile">
+      </div>
+    </div>
+  </section>
+
   <!-- Projects -->
-  <section class="project" data-aos="zoom-in">
-    <h2>🧠 ML Project</h2>
-    <a href="https://github.com/Vasanth6543/ml-pytorch-project-1" target="_blank">View on GitHub</a>
-  </section>
+  <section id="projects" class="projects">
+    <div class="project" data-aos="zoom-in">
+      <h2>🧠 ML Project</h2>
+      <a href="https://github.com/Vasanth6543/ml-pytorch-project-1" target="_blank">View on GitHub</a>
+    </div>
 
-  <section class="project" data-aos="flip-left">
-    <h2>📽️ YouTube Scraper</h2>
-    <a href="https://github.com/Vasanth6543/YOUTUBE-SCRAPER" target="_blank">View on GitHub</a>
-  </section>
+    <div class="project" data-aos="flip-left">
+      <h2>📽️ YouTube Scraper</h2>
+      <a href="https://github.com/Vasanth6543/YOUTUBE-SCRAPER" target="_blank">View on GitHub</a>
+    </div>
 
-  <section class="project" data-aos="fade-up-right">
-    <h2>🖼️ Sketch Project</h2>
-    <a href="https://github.com/Vasanth6543/sketch-project" target="_blank">View on GitHub</a>
+    <div class="project" data-aos="fade-up-right">
+      <h2>🖼️ Sketch Project</h2>
+      <a href="https://github.com/Vasanth6543/sketch-project" target="_blank">View on GitHub</a>
+    </div>
   </section>
 
   <!-- Contact -->
-  <section class="contact" data-aos="fade-up">
+  <section id="contact" class="contact" data-aos="fade-up">
     <h2>Contact Me</h2>
     <p>Email: <a href="mailto:vasanthoffl14@gmail.com">vasanthoffl14@gmail.com</a></p>
     <p>GitHub: <a href="https://github.com/Vasanth6543" target="_blank">github.com/Vasanth6543</a></p>
@@ -57,11 +82,12 @@
 
   <!-- Footer -->
   <footer>
-    <p class="glow" data-aos="fade-up">© 2025 Vasanth6543</p>
+    <p>© 2025 Vasanth6543</p>
   </footer>
 
-  <!-- AOS and Custom JS -->
+  <!-- JS Libraries -->
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
   <script src="script.js"></script>
 </body>
 </html>
